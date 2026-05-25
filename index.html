@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Formulário da SOS Sistemas para coleta de briefing de lojas que desejam vender online."
+  >
+  <title>SOS Sistemas | Formulário para Loja Virtual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-badge">Briefing de projeto</div>
+      <h1>Sua próxima loja virtual começa aqui.</h1>
+      <p>
+        Preencha este formulário para a SOS Sistemas entender o seu negócio,
+        estruturar o site ideal e acelerar o seu atendimento no WhatsApp.
+      </p>
+    </section>
+
+    <section class="form-card">
+      <header class="sos-header">
+        <div class="sos-logo" aria-hidden="true">
+          <span class="sos-icon">SOS</span>
+          <span class="sos-slash"></span>
+        </div>
+        <div>
+          <p class="eyebrow">SOS Sistemas</p>
+          <h2>Formulário de criação de site de vendas</h2>
+        </div>
+      </header>
+
+      <form id="siteForm" novalidate>
+        <section class="form-section">
+          <div class="section-heading">
+            <span>01</span>
+            <div>
+              <h3>Dados da loja</h3>
+              <p>Quem está vendendo e como podemos entrar em contato.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              Nome da loja
+              <input type="text" name="nomeLoja" autocomplete="organization" required>
+            </label>
+            <label>
+              Seu nome
+              <input type="text" name="seuNome" autocomplete="name" required>
+            </label>
+            <label>
+              WhatsApp para contato
+              <input type="tel" name="whatsapp" autocomplete="tel" placeholder="(00) 00000-0000" required>
+            </label>
+            <label>
+              Tipo de produtos que vai vender
+              <input type="text" name="tipoProdutos" placeholder="Moda, eletrônicos, cosméticos..." required>
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>02</span>
+            <div>
+              <h3>Estilo do site</h3>
+              <p>Referências visuais para definirmos a identidade da loja.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <label class="field-span-full">
+              Como você quer o visual?
+              <input type="text" name="visual" placeholder="Ex.: moderno, simples, elegante..." required>
+            </label>
+            <label>
+              Cores principais do site
+              <input type="text" name="coresPrincipais" placeholder="Ex.: preto, dourado e branco" required>
+            </label>
+            <label>
+              Site de referência
+              <input type="url" name="siteReferencia" placeholder="https://">
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>03</span>
+            <div>
+              <h3>Estrutura do site</h3>
+              <p>Marque as áreas e funções que a loja deve ter.</p>
+            </div>
+          </div>
+
+          <div class="choice-grid">
+            <label><input type="checkbox" name="estrutura" value="Página inicial"> Página inicial</label>
+            <label><input type="checkbox" name="estrutura" value="Catálogo de produtos"> Catálogo de produtos</label>
+            <label><input type="checkbox" name="estrutura" value="Carrinho de compras"> Carrinho de compras</label>
+            <label><input type="checkbox" name="estrutura" value="Sistema de pedidos"> Sistema de pedidos</label>
+            <label><input type="checkbox" name="estrutura" value="Login de clientes"> Login de clientes</label>
+            <label><input type="checkbox" name="estrutura" value="Painel administrativo"> Painel administrativo</label>
+            <label><input type="checkbox" name="estrutura" value="Botão de WhatsApp"> Botão de WhatsApp</label>
+          </div>
+
+          <label class="field-inline">
+            Outro item importante
+            <input type="text" name="estruturaOutro" placeholder="Descreva algo extra">
+          </label>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>04</span>
+            <div>
+              <h3>Pagamento</h3>
+              <p>Como a sua loja vai receber os pedidos.</p>
+            </div>
+          </div>
+
+          <div class="choice-grid">
+            <label><input type="checkbox" name="pagamento" value="Pix"> Pix</label>
+            <label><input type="checkbox" name="pagamento" value="Cartão"> Cartão</label>
+            <label><input type="checkbox" name="pagamento" value="Dinheiro na entrega"> Dinheiro na entrega</label>
+          </div>
+
+          <label class="field-inline">
+            Outro meio de pagamento
+            <input type="text" name="pagamentoOutro" placeholder="Ex.: boleto, link de pagamento">
+          </label>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>05</span>
+            <div>
+              <h3>Entrega</h3>
+              <p>Defina como os produtos chegarão até o cliente.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              Vai ter entrega?
+              <select name="entrega" required>
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </label>
+            <label>
+              Como funciona?
+              <input type="text" name="comoEntrega" placeholder="Motoboy, Correios, retirada...">
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>06</span>
+            <div>
+              <h3>Funções extras</h3>
+              <p>Recursos adicionais para vender melhor e operar com mais controle.</p>
+            </div>
+          </div>
+
+          <div class="choice-grid">
+            <label><input type="checkbox" name="extras" value="Notificação no WhatsApp"> Notificação no WhatsApp</label>
+            <label><input type="checkbox" name="extras" value="Cadastro de clientes"> Cadastro de clientes</label>
+            <label><input type="checkbox" name="extras" value="Promoções e cupons de desconto"> Promoções e cupons de desconto</label>
+            <label><input type="checkbox" name="extras" value="Controle de estoque"> Controle de estoque</label>
+          </div>
+
+          <label class="field-inline">
+            Outro recurso desejado
+            <input type="text" name="extrasOutro" placeholder="Ex.: integração com ERP">
+          </label>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span>07</span>
+            <div>
+              <h3>Observações importantes</h3>
+              <p>Conte qualquer detalhe que ajude a SOS Sistemas a entender sua visão.</p>
+            </div>
+          </div>
+
+          <label>
+            Observações
+            <textarea
+              name="observacoes"
+              rows="5"
+              placeholder="Descreva ideias, diferenciais, prazos ou necessidades específicas."
+            ></textarea>
+          </label>
+        </section>
+
+        <div class="form-footer">
+          <p>Ao enviar, as respostas serão abertas no WhatsApp para atendimento imediato.</p>
+          <button type="submit" class="enviar">Enviar respostas no WhatsApp</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
